@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special To Do List</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<body>
+  <h1>Add a New Task</h1>
+  <form id="task-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <label for="start-datetime">Start Date & Time:</label>
+    <input type="datetime-local" id="start-datetime" name="start-datetime" required>
+
+    <label for="end-datetime">End Date & Time:</label>
+    <input type="datetime-local" id="end-datetime" name="end-datetime" required>
+
+    <button type="submit">Add Task</button>
+  </form>
+
+  <h2>Your Tasks</h2>
+  <ul id="tasks-list"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
